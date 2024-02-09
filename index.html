@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموارد البشرية والتنمية الاجتماعيه </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Remove background image */
+        }
+
+        .header {
+            background-color: #ffffff00;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: right;
+        }
+
+        .navbar {
+            background-color: #ddd;
+            color: #333;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .form-wrapper {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .result-box {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .result-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with logo -->
+    <div class="header">
+        <img src="https://www.hrsd.gov.sa/logo-ar.svg" alt="Logo" style="width: 120px; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Notification bar -->
+    <div class="navbar">
+        <p>شكرًا لاستخدام الخدمة. تم العثور على نتيجة الاستعلام.</p>
+    </div>
+
+    <!-- Form section -->
+    <div class="form-wrapper">
+        <h2 class="form-title">خدمة الاستعلام عن حالة إرسال بيانات ذوي الإعاقة</h2>
+        <form>
+            <div class="form-group">
+                <label for="national_id" class="form-label" style="text-align: 0 auto ;">رقم الهوية الوطنية</label>
+
+                <input type="number" id="national_id" name="national_id" class="form-input" placeholder="ادخل رقم الهوية الوطنية">
+            </div>
+            <button type="button" class="button" onclick="verify()">التحقق</button>
+        </form>
+    </div>
+
+    <!-- Result box -->
+    <div class="result-box" id="result-box" style="display: none;">
+        <p class="result-text">تم التحقق من صحة البيانات</p>
+        <div class="result-number"></div>
+        <button class="button">
+            <a href="./logo/جديد حالص.pdf" style="text-decoration: none; color: white;">عرض النتيجة</a>
+        </button>
+        
+    </div>
+
+    <script>
+        function verify() {
+            // Dummy function to simulate verification
+            document.getElementById("result-box").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
